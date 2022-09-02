@@ -1,40 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/holo_red_light"
-    android:orientation="vertical"
-    tools:context=".RedFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/red_fragment_tv_header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:text="RED"
-        android:textAlignment="center"
-        android:textSize="60sp" />
+    <data>
 
-    <EditText
-        android:id="@+id/red_fragment_et_message"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/message_text_hint"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:textSize="24sp" />
+    </data>
 
-    <Button
-        android:id="@+id/red_fragment_bt_next"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/next_button_text" />
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_light"
+        android:orientation="vertical"
+        tools:context=".RedFragment">
 
-    <TextView
-        android:id="@+id/red_fragment_tv_message"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/red_fragment_tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="RED"
+            android:textAlignment="center"
+            android:textSize="60sp" />
+
+        <EditText
+            android:id="@+id/red_fragment_et_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/message_text_hint"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/red_fragment_bt_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next_button_text" />
+
+        <TextView
+            android:id="@+id/red_fragment_tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </LinearLayout>
+</layout>
