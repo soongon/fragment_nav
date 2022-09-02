@@ -6,16 +6,40 @@
 
     </data>
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".BlueFragment">
+        android:background="@android:color/holo_blue_light"
+        android:orientation="vertical" >
 
-        <!-- TODO: Update blank fragment layout -->
         <TextView
+            android:id="@+id/blue_fragment_tv_header"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment" />
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="BLUE"
+            android:textAlignment="center"
+            android:textSize="60sp" />
 
-    </FrameLayout>
+        <EditText
+            android:id="@+id/blue_fragment_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/message_text_hint"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/blue_fragment_bt_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next_button_text" />
+
+        <TextView
+            android:id="@+id/blue_fragment_tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+    </LinearLayout>
 </layout>
